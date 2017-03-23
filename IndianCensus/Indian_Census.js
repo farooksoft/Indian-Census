@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 // 3 CSV files needed for the project
-var fileName = ['./India2011.csv', './IndiaSC2011.csv','./IndiaST2011.csv'];
+var fileName = ['data/India2011.csv', 'data/IndiaSC2011.csv','data/IndiaST2011.csv'];
 
 // 3 different objects
 var age_wise_data = {};
@@ -94,6 +94,6 @@ for(var i = 0; i < 3; i = i + 1) {
   file_csv(fName);
   }
 
-fs.writeFile('./age_wise_data.json', JSON.stringify(age_wise_data));
-fs.writeFile('./state_gender_data.json', JSON.stringify(state_gender_data));
-fs.writeFile('./educational_category.json', JSON.stringify(edu_category));
+fs.writeFile('output/age_wise_data.json', JSON.stringify(age_wise_data));
+fs.writeFile('output/state_gender_data.json', JSON.stringify(state_gender_data));
+fs.writeFile('output/educational_category.json', JSON.stringify(edu_category));

@@ -13,7 +13,7 @@ var Growth_Array = [];
 
 // reading the CSV file
 var rl = readline.createInterface({
-    input: fs.createReadStream('datafile.csv')
+    input: fs.createReadStream('data/datafile.csv')
 });
 
 // functions to split and differentiate the operations
